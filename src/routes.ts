@@ -1,5 +1,9 @@
-import CreatePayment from './components/CreatePayment';
 import App from './App';
+import CardMinimal from './components/CardMinimal';
+import CardDetailed from './components/CardDetailed';
+import SplitCard from './components/SplitCard';
+import PaymentRequestButton from './components/PaymentRequestButton';
+
 
 const dashRoutes = [
   {
@@ -12,13 +16,40 @@ const dashRoutes = [
     permission: "menuHome",
   },
   {
-    path: "/create-payment",
-    name: "Create Payment",
-    icon: "business_bank",
-    component: CreatePayment,
-    layout: "/admin",
+    path: "/card-minimal",
+    name: "Card Minimal",
+    icon: "",
+    component: CardMinimal,
+    layout: "",
     menu: true,
-    permission: "menuHome",
+    permission: "",
+  },
+  {
+    path: "/card-detailed",
+    name: "Card Detailed",
+    icon: "",
+    component: CardDetailed,
+    layout: "",
+    menu: true,
+    permission: "",
+  },
+  {
+    path: "/split-card",
+    name: "Split Card",
+    icon: "",
+    component: SplitCard,
+    layout: "",
+    menu: true,
+    permission: "",
+  },
+  {
+    path: "/payment-request-button",
+    name: "Payment Request Button",
+    icon: "",
+    component: PaymentRequestButton,
+    layout: "",
+    menu: true,
+    permission: "",
   },
 ];
 

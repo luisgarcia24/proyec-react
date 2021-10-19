@@ -14,13 +14,16 @@ const App = () => {
     <Grid className={classes.root} container justify="center">
       <Grid className={classes.menu} item xs={4}>
         <Button className={classes.button} variant="contained" fullWidth>
-          <Link to="/create-payment">Create Payment</Link>
+          <Link to="/card-minimal">Card Minimal</Link>
         </Button>
         <Button className={classes.button} variant="contained" fullWidth>
-          <Link to="/stripe-checkout">Stripe Checkout</Link>
+          <Link to="/card-detailed">Card Detailed</Link>
         </Button>
         <Button className={classes.button} variant="contained" fullWidth>
-          <Link to="/update">Update Users</Link>
+          <Link to="/split-card">Split Card</Link>
+        </Button>
+        <Button className={classes.button} variant="contained" fullWidth>
+          <Link to="/payment-request-button">Payment Request Button</Link>
         </Button>
       </Grid>
     </Grid>

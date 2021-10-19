@@ -33,7 +33,7 @@ ReactDOM.render(
       <Provider store={store}>
         <Router history={hist}>
           <Switch>
-            <Route path="/" render={(props) => <Admin {...props} />} />
+            <Route path="/" render={(props) => <Admin />} />
           </Switch>
         </Router>
       </Provider>
