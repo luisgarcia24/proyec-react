@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { Route, Switch } from 'react-router-dom'
+import React, { FC } from "react";
+import { Route, Switch } from "react-router-dom"
 
 interface IRoute {
   path: string
@@ -15,7 +15,7 @@ interface IProps {
   routes: IRoute[]
 }
 
-const AdminRoutes: FC<IProps> = ({routes}) => {
+const AdminRoutes: FC<IProps> = ({ routes }) => {
   return (
     <React.Fragment>
       <Switch>
