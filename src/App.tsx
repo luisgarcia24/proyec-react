@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { makeStyles, Button, Grid } from '@material-ui/core';
+import { makeStyles, Grid } from "@material-ui/core";
+import ButtonOlab from "./components/ButtonOlab";
 
 const useStyles = makeStyles(() => ({
   root: { padding: 15 },
@@ -13,18 +13,9 @@ const App = () => {
   return (
     <Grid className={classes.root} container justify="center">
       <Grid className={classes.menu} item xs={4}>
-        <Button className={classes.button} variant="contained" fullWidth>
-          <Link to="/card-minimal">Card Minimal</Link>
-        </Button>
-        <Button className={classes.button} variant="contained" fullWidth>
-          <Link to="/card-detailed">Card Detailed</Link>
-        </Button>
-        <Button className={classes.button} variant="contained" fullWidth>
-          <Link to="/split-card">Split Card</Link>
-        </Button>
-        <Button className={classes.button} variant="contained" fullWidth>
-          <Link to="/payment-request-button">Payment Request Button</Link>
-        </Button>
+        <ButtonOlab>
+          Button Olab
+        </ButtonOlab>
       </Grid>
     </Grid>
   )
